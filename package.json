@@ -5,15 +5,22 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "vite build"
-    
+    "build": "echo 'No build step required for this Node.js app'",
+    "test": "echo 'No tests specified yet'",
+    "lint": "echo 'No linting configured yet'",
+    "docker:build": "docker build -t emmanuelkesseh_profile .",
+    "docker:run": "docker run -p 3000:3000 emmanuelkesseh_profile",
+    "setup:ecr": "chmod +x scripts/setup-ecr.sh && ./scripts/setup-ecr.sh",
+    "build:local": "chmod +x scripts/local-build.sh && ./scripts/local-build.sh"
   },
   "keywords": [
     "profile",
     "portfolio",
-    "developer"
+    "developer",
+    "backend",
+    "aws",
+    "microservices"
   ],
   "author": "Emmanuel Kesseh",
   "license": "MIT",
